@@ -208,7 +208,7 @@ color: #3C2A21;
     letter-spacing: 1px;
     color: #1A120B;
 }
-.welcome .welcomeBox a {
+.welcome .welcomeBox a  , .news a{
 display: block;
 text-decoration: none;
 text-transform:capitalize;
@@ -447,6 +447,7 @@ font-size: 14px;
     margin: 120px auto 0 auto;
     text-align: center;
     background-image: url(../img/R.jpg);
+    background-attachment: fixed;
     background-repeat: no-repeat;
     background-position: top;
     /*background-size: cover;
@@ -489,7 +490,7 @@ text-transform: capitalize;
 /* -------------------  end numbers section ----------------------- */
 
 .pricing{
-    margin: 0 auto 120px auto;
+    margin: 0px auto;
     background-color: #E5E5CB;
     padding: 80px 12px;
 }
@@ -595,4 +596,288 @@ color: #D5CEA3;
 }
 
 /* -------------------  end pricing section ----------------------- */
+
+.team{
+       background-image: url(../img/coffee-types-explained-scaled.webp);
+       background-attachment: fixed;
+       width: 100%;
+       background-size: cover;
+       padding: 60px 0;
+       margin: 0 auto 120px auto;  
+       /* opacity: 58%; */
+       position: relative;
+       z-index: 1;
+    }
+    .team .overlay_ver2{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: #1a120bad;
+        z-index: -1;
+    }
+.team .teamBigBox{
+margin: 0px auto;
+width: 80%;
+/* background-color: #735F32; */
+padding: 12px 8px;
+}
+.team .teamBigBox .teamsmallbox{
+    width: 46%;
+    display: inline-block;
+    /* background-color: #D5CEA3; */
+    padding: 8px;
+    margin: 0 12px;
+    position: relative;
+}
+.team .teamBigBox .subteam{
+    width: 55%;
+    margin: 4px;
+    /* background-color: #796443; */
+    line-height: 1.5;
+    position: absolute;
+    left:120px;
+    top: 24px;
+}
+.team .teamBigBox .teamsmallbox img{
+     width: 90px;
+     height: 80px;
+     border-radius: 50%;
+     -webkit-border-radius: 50%;
+     -moz-border-radius: 50%;
+     -ms-border-radius: 50%;
+     -o-border-radius: 50%;
+     border:2px solid #1A120B;
+     box-shadow: 2px 5px 2px #1A120B;
+}
+ .subteam h3{
+color: #D5CEA3;
+font-size: 18px;
+font-weight: 700;
+}
+  .subteam span{
+    color: #C69749;
+    font-size: 14px;
+    font-weight: 100;
+}
+.team .teamBigBox .teamsmallbox p{
+    padding: 12px ;
+    margin:8px;
+    color: #E5E5CB;
+ }
+
+/* -------------------  end team section ----------------------- */
+
+.ourteam{
+    margin: 120px auto;  
+    /* background-color: #1A120B; */
+    padding: 12px;
+}
+.ourteam .bigourteambox{
+width: 75%;
+/* background-color: #3C2A21; */
+margin: auto;
+text-align: center;
+}
+
+.ourteam .bigourteambox .smallourteambox{
+width: 28%;
+display: inline-block;
+background-color: #e5e5cbc3;
+margin:8px 24px ;
+/* text-align: center; */
+padding: 14px;
+line-height: 1.6;
+position: relative;
+}
+.ourteam .bigourteambox .smallourteambox img{
+    width: 85%;
+    border-radius: 18px;
+    /*position: relative;
+    */display:inline-block ;
+
+}
+.ourteam .bigourteambox .soicicons {
+    position: absolute;
+    right: 40px;
+    top: 30px;
+    width: 10%;
+    /*height: 80%;
+    */padding: 2px;
+    margin: 4px;
+    display: none;
+    transition: all .4s ease;
+    -webkit-transition: all .4s ease;
+    -moz-transition: all .4s ease;
+    -ms-transition: all .4s ease;
+    -o-transition: all .4s ease;
+}
+.ourteam .bigourteambox .smallourteambox .soicicons i{
+    display: block;
+    font-size: 30px;
+    color: #C69749;
+    background-color: #1A120B;
+    margin: 1px auto;
+    padding: 0px;
+}
+.ourteam .bigourteambox .smallourteambox .layoutimg{
+          width: 100%;
+          height:0;
+          background-color: #3c2a2189;
+          position: absolute;
+          top: 0;
+          left: 0;
+          transition:all .8s ease;
+          -webkit-transition:all .8s ease;
+          -moz-transition:all .8s ease;
+          -ms-transition:all .8s ease;
+          -o-transition:all .8s ease;
+}
+.ourteam .bigourteambox .smallourteambox:hover .soicicons{
+    display: block;
+}
+.ourteam .bigourteambox .smallourteambox:hover .layoutimg{
+    height: 100%;
+    /* z-index: 1; */
+}
+
+/* <!-- ------------------------ end our team -------------------- --> */
+
+
+.news{
+    margin: 60px auto;
+    /* background-color: #E5E5CB; */
+    padding: 33px 0;
+}
+.news .bignewsbox{
+width: 80%;
+/* background-color: #3c2a2190; */
+margin: 90px auto 0 auto ;
+/* text-align: center; */
+/* z-index: -1; */
+}
+.news .bignewsbox .smallnewsbox{
+/* background-color: #73603274; */
+display: inline-block;
+width: 28%;
+/* height: 100%; */
+padding: 0 18px 18px 18px;
+margin: 0 30px;
+text-align: left;
+position: relative;
+}
+.news .layoutimg{
+    width: 100%;
+    height:0;
+    background-color: #c6964981;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition:all .8s ease;
+    -webkit-transition:all .8s ease;
+    -moz-transition:all .8s ease;
+    -ms-transition:all .8s ease;
+    -o-transition:all .8s ease;
+}
+.news .bignewsbox .smallnewsbox:hover .layoutimg{
+    height: 100%;
+    /* z-index: 1; */
+}
+.news .bignewsbox .smallnewsbox img{
+    display: block;
+    text-align: left;
+    /* margin: 0 auto 20px  auto; */
+    margin: 0 0 20px 0;
+    width: 200px;
+    height: 300px;
+    border-radius: 18px;
+    -webkit-border-radius: 18px;
+    -moz-border-radius: 18px;
+    -ms-border-radius: 18px;
+    -o-border-radius: 18px;
+}
+.news .bignewsbox .smallnewsbox  span{
+    margin: 16px 2px;
+    color: #AD8E70;
+}
+.news .bignewsbox .smallnewsbox i{
+    color: #D5CEA3;
+    font-size: 12px;
+    margin: 0 0 0 16px;
+}
+.news .bignewsbox .smallnewsbox h2{
+    margin: 18px 0;
+    font-size: 16px;
+    color: #1A120B;
+}
+.news .bignewsbox .smallnewsbox  p{
+    color: #3C2A21;
+    font-size: 16px;
+    margin: 22px 0;
+    font-weight: 500;
+    line-height: 1.8;
+}
+
+
+/* ----------------------------end News---------------------------- */
+
+.footer{
+background-color: #1A120B;
+text-align: center;
+margin: 0 auto;
+padding: 30px;
+box-shadow: #1A120B 0px 22px 70px 4px;
+
+}
+
+.footer i{
+     color: #C69749;
+     font-size: 22px;
+     border-radius: 50px;
+     display: inline-block;
+     -webkit-border-radius: 50px;
+     -moz-border-radius: 50px;
+     -ms-border-radius: 50px;
+     -o-border-radius: 50px;
+     margin: 14px auto;
+     background-color: #E5E5CB;
+     width: 36px;
+     height: 36px;
+     padding-top: 6px;
+     box-shadow: 4px 11px 22px #3C2A21;
+     text-align: center;
+     cursor: pointer ;
+     transition: all .4s ease-in;
+     -webkit-transition: all .4s ease-in;
+     -moz-transition: all .4s ease-in;
+     -ms-transition: all .4s ease-in;
+     -o-transition: all .4s ease-in;
+} 
+.footer i:hover{
+    background-color: #735F32;
+    color: #D5CEA3;
+}
+.footer img{
+         margin: 14px auto;
+         width: 120px;
+         height: 120px;
+         display: block;
+         border-radius:20px ;
+         -webkit-border-radius:20px ;
+         -moz-border-radius:20px ;
+         -ms-border-radius:20px ;
+         -o-border-radius:20px ;
+         filter: grayscale(20%);
+         box-shadow: #3C2A21 0px 1px 0px, #735F32 0px 8px 22px, #3C2A21 0px 14px 45px;}
+.footer span{
+    display: block;
+    font-weight: 700;
+    font-size: 16px;
+    color: #D5CEA3;
+    text-transform: capitalize;
+    margin: 8px;
+}
+
+/* ----------------------------end footer---------------------------- */
 
