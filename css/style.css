@@ -5,18 +5,43 @@
     /* background-color: #E5E5CB; */
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
+/* https://colorhunt.co/palette/1a120b3c2a21d5cea3e5e5cb
+https://colorhunt.co/palette/243763ff6e31ffebb7ad8e70
+https://colorhunt.co/palette/000000282a3a735f32c69749
+*/
+
+/* ------------------------ */
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+  }
+  /* Track */
+  ::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 4px #AD8E70;
+    border-radius: 10px;
+  }
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #3C2A21;
+    border-radius: 8px;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    -ms-border-radius: 8px;
+    -o-border-radius: 8px;
+}
+/* ------------------------ */
 .nav{
 background-color: #1A120B;
 padding: 10px;
-height: 80px;
+height: 74px;
 width: 100%;
 z-index: 1;
 position: fixed;
 box-shadow: 1px 1px 4px #3C2A21;
 }
 .nav .navimg{
-    width: 80px;
-    height: 60px;
+    width: 60px;
+    height: 50px;
     float: left;
     margin-left: 100px;
     box-shadow: 2px 2px 6px #D5CEA3;
@@ -169,6 +194,7 @@ color: #D5CEA3;
     margin: auto;
 }
 .welcome .welcomeBox{
+         text-transform: capitalize;
          margin: 30px ;
          padding: 25px 14px;
          width: 25%;
@@ -223,6 +249,9 @@ font-size: 18px;
 margin: 40px 0;
 padding: 80px 12px;
 background-color: #E5E5CB;
+}
+.featuer .title h1{
+    text-transform: capitalize ;
 }
 .featuer .featuerbigbox{
     margin: 12px auto;
@@ -339,6 +368,7 @@ color: #D5CEA3;
     position: absolute;
     right: 12px;
     top: 20px;
+    text-transform: capitalize;
 }
 .offer .offerbigbox .offerBox h2{
 font-size: 24px;
@@ -670,7 +700,7 @@ font-weight: 700;
 /* -------------------  end team section ----------------------- */
 
 .ourteam{
-    margin: 120px auto;  
+    margin: 90px auto 60px auto;  
     /* background-color: #1A120B; */
     padding: 12px;
 }
@@ -693,6 +723,7 @@ position: relative;
 }
 .ourteam .bigourteambox .smallourteambox img{
     width: 85%;
+    height: 288px;
     border-radius: 18px;
     /*position: relative;
     */display:inline-block ;
@@ -746,7 +777,7 @@ position: relative;
 
 
 .news{
-    margin: 60px auto;
+    margin: 0 auto 60px auto;
     /* background-color: #E5E5CB; */
     padding: 33px 0;
 }
