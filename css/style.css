@@ -312,45 +312,60 @@ background-color: #E5E5CB;
     width: 90%;
     height: 90%;
     padding: 12px;
-    -webkit-transform: translate(-50%,-50%);
-    -moz-transform: translate(-50%,-50%);
-    -ms-transform: translate(-50%,-50%);
-    -o-transform: translate(-50%,-50%);
     border-radius: 22px;
-    -webkit-border-radius: 22px;
-    -moz-border-radius: 22px;
-    -ms-border-radius: 22px;
-    -o-border-radius: 22px;
-    display: none;
-
-    transition:all .6s ease;
-    -webkit-transition:all .6s ease;
-    -moz-transition:all .6s ease;
-    -ms-transition:all .6s ease;
-    -o-transition:all .6s ease;
+    /* display: none; */
+    visibility: hidden;
+    transition: all .4s ease-in;
+    -webkit-transition: all .4s ease-in;
+    -moz-transition: all .4s ease-in;
+    -ms-transition: all .4s ease-in;
+    -o-transition: all .4s ease-in;
 }
 .featuerbox:hover .featuerupperbox{
-    display: block;
+    /* display:block; */
+    visibility: visible;
     width: 100%;
     height: 100%;
-    /* transition:all .6s ease;
-    -webkit-transition:all .6s ease;
-    -moz-transition:all .6s ease;
-    -ms-transition:all .6s ease;
-    -o-transition:all .6s ease; */
+    transition: all .5s ease-in;
+    -webkit-transition: all .5s ease-in;
+    -moz-transition: all .5s ease-in;
+    -ms-transition: all .5s ease-in;
+    -o-transition: all .5s ease-in;
 }
+/* 
+.featuerbox:hover .featuerupperbox h5{
+      transition:all .6s ease-in;
+      -webkit-transition:all .6s ease-in;
+      -moz-transition:all .6s ease-in;
+      -ms-transition:all .6s ease-in;
+      -o-transition:all .6s ease-in; 
+      visibility: visible;
+}
+.featuerbox:hover .featuerupperbox p{
+    transition:all .7s ease-in;
+    -webkit-transition:all .7s ease-in;
+    -moz-transition:all .7s ease-in;
+    -ms-transition:all .7s ease-in;
+    -o-transition:all .7s ease-in;
+    visibility: visible;
+}
+.featuerbox:hover .featuerupperbox i{
+    visibility: visible;
+} */
 .featuerbox .featuerupperbox h5{
-font-size: 18px;
-font-weight: 100;
-text-transform: uppercase;
-color: #C69749;
-margin-top: 120px;
+      font-size: 18px;
+      font-weight: 100;
+      text-transform: uppercase;
+      color: #C69749;
+      margin-top: 120px;
+      /* visibility: hidden; */
 }
 .featuerbox .featuerupperbox p{
-margin: 12px;
-font-size:18px;
-font-weight: 700;
-color: #D5CEA3;
+        margin: 12px;
+        font-size:18px;
+        font-weight: 700;
+        color: #D5CEA3;
+        /* visibility: hidden; */
 }
 .featuerbox .featuerupperbox i{
     background-color: #C69749;
@@ -363,6 +378,7 @@ color: #D5CEA3;
     -moz-border-radius: 12px;
     -ms-border-radius: 12px;
     -o-border-radius: 12px;
+    /* visibility: hidden; */
 }
 /* -------------------  end featuer section ----------------------- */
 .offer{
@@ -391,9 +407,28 @@ color: #D5CEA3;
     -ms-transition: all .4s ease-out;
     -o-transition: all .4s ease-out;
 }
-.offer .offerbigbox .offerBox:hover{
-    background-color: #3c2a21ae;
+.offer .offerbigbox .offerBox::after{
+    position: absolute;
+    content: " ";
+    top: 0;
+    left: 0;
+    width: 0%;
+    height: 0%;
+    opacity: 0;
+    border-radius: 18px;
+    transition: all .8s ease;
+    -webkit-transition: all .8s ease;
+    -moz-transition: all .8s ease;
+    -ms-transition: all .8s ease;
+    -o-transition: all .8s ease;
+    z-index: -1;
 }
+.offer .offerbigbox .offerBox:hover::after{
+    width: 100%;
+    height: 100%;
+    background-color: #3c2a21ae;
+    opacity: 1;
+ }
 .offer .offerbigbox .offerBox:hover h2{
    color: #D5CEA3;
 }
