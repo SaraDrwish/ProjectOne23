@@ -65,7 +65,7 @@ box-shadow: 1px 1px 4px #3C2A21;
 }
 .nav ul{
     background-color: #1A120B;
-     list-style: none;
+    list-style: none;
     color: #D5CEA3;
     float: right;
     margin-right: 100px;
@@ -74,13 +74,15 @@ box-shadow: 1px 1px 4px #3C2A21;
 .nav ul li{
     background-color: #1A120B;
     display: inline-block;
-    padding: 16px;
+    margin:12px;
+    padding: 2px;
     text-transform: capitalize;
+    position: relative;
 }
 .nav a {
     text-decoration: none;
     color: unset;
-    display: block;
+    display: inline-block;
     background-color: #1A120B;
     transition: all .4s ease-in-out;
     -webkit-transition: all .4s ease-in-out;
@@ -88,19 +90,36 @@ box-shadow: 1px 1px 4px #3C2A21;
     -ms-transition: all .4s ease-in-out;
     -o-transition: all .4s ease-in-out;
 }
-.nav .home{
-    text-decoration: underline;
- }
-.nav .home  , .nav  li:hover{
+ .nav ul a::before{
+    content: " ";
+    position: absolute;
+    top:24px;
+    width: 0px;
+    height: 2px;
+    background-color: #C69749;
+    transition: all .5s ease-out;
+    -webkit-transition: all .6s ease-out;
+    -moz-transition: all .6s ease-out;
+    -ms-transition: all .6s ease-out;
+    -o-transition: all .6s ease-out;
+    padding: 0;
+}
+ .nav a:hover::before{
+    transition: all .5s ease-out;
+    width: 100%;
+    padding: 0;
+}
+.nav .home:hover{
     color:  #C69749 ;
-    text-decoration: underline;
 }
 /* -------------------end nav ---------------------- */
 .header1{
+    position: relative;
     height: 100vh;
     width: 100%;
     background-image: url(../img/ww1-1536x864.webp);
-    position: relative;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
  .overlay{
     background-color: #1a120bc5;
